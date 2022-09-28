@@ -6,7 +6,7 @@
 }
 
 body {
-    background-color: #ffffff;
+    background-color: whitesmoke;
     font-family: 'Roboto Condensed', sans-serif;
     font-size: 15px;
     line-height: 1.4;
@@ -55,7 +55,7 @@ img {
 .headline-1,
 .headline-2,
 .headline-3{
-    background-color: gray;
+    background-color: lightskyblue;
     color: white;
     margin-bottom: -20px;
     padding: 12px;
