@@ -41,14 +41,17 @@ body {
 header {
     background-color: var(--primary-color);
     padding: 20px 0px;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    right: 0;
 }
 .header-logo {
     display: flex;
     align-items: right;
     justify-content: center;
     border-radius: 1.5em;
-    width: 50px;
-    height: 50px;
+    width: 50%;
 }
 
 .header-logo img {
@@ -56,13 +59,15 @@ header {
     height: 5rem;
     padding: 0 20px;
 }
-
-.main-header {
-    align-items: center;
-    justify-items: right;
-    padding: 0 20px;
+.heading{
+    display: grid;
+    grid-template-columns: 20% 80%;
+    grid-template-rows: 1fr 1fr;
 }
-
+.heading h2 {
+    grid-column: 2/3;
+    grid-row: 2/3;
+}
 #hamburger-button {
     margin: 0;
     padding: 0 8px;
@@ -77,23 +82,28 @@ nav {
     z-index: 10;
 	margin: 0 auto;
 	width: 100%;
-	position: fixed;
 	font-family: var(--heading-font);
 }
 
 nav ul {
-    display: none;
     list-style: none;
     padding: 0;
     margin: 0;
+    
 }
 .nav-header ul{
 	margin: 0;
 	list-style: none;
 	padding: 0;
+  
 }
-
-nav ul.open {
+.nav-header ul li {
+    display: none;
+}
+.nav-header ul li:first-child{
+    display: block;
+}
+.nav-header ul.open li {
     display: block;
 }
 
@@ -113,14 +123,7 @@ nav ul li.active a {
     color: white;
     font-weight: bold;
 }
-.nav-header a{
-	display: block;
-	padding: 0.75rem;
-	text-align: left;
-	text-decoration: none;
-	font-weight: bold;
-	transition: 0.5s;
-}
+
 
 #hamburger-button span:nth-child(1) {display: block;}
 #hamburger-button span:nth-child(2) {display: none;}
@@ -138,105 +141,10 @@ nav ul li.active a {
     margin: 20px 20px 0px 20px;
     color: white;
 }
-
-
-.navigation .toggle li a:hover {
-	background-color: var(--accent2-color);
-}
-.navigation .toggle li a{
-	background-color: var(--secondary-color);
-	color: var(--accent3-color);
-	border-top: 1px solid var(--accent3-color);
-}
-.navigation button{
-	margin: .2rem 2vw;
-	background: transparent;
-	font-size: 2rem;
-	border: none;
-	color: var(--accent3-color);
-}
-.navigation .toggle li.active a{
-	background-color: var(--primary-color);
-}
-.navigation .toggle li {
-	display: none;
-}
-.navigation a{
-	display: block;
-	padding: 0.75rem;
-	text-align: left;
-	text-decoration: none;
-	font-weight: bold;
-	transition: 0.5s;
-	font-size: clamp(1rem, 2vmin, 1.5rem);
-}
-.navigation ul{
-	display: none;
-}
-.navigation .toggle li{
-	display: block;
-}
-.navigation .toggle.open{
-	display: block;
+main{
+    margin-top: 25rem;
 }
 
-footer {
-    text-align: center;
-    background-color: var(--primary-color);
-    padding: 0 20px 0 20px;
-    color: var(--accent3-color);
-    font-family: var(--heading-font);
-}
-.event {
-    margin: 0;
-    position: relative;
-    text-align: center;
-    color: white;
-    margin-top: -120px;
- }
- 
- .event p {
-    position: absolute;
-    top: 27%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    font-family: var(--heading-font);
-    font-size: 1.8em;
-    padding: 5%;
-    max-width: 100%;
-    color: var(--accent3-color);
-    text-shadow:1px 1px 2px #A51890, 1px 1px 10px #A51890;
- }
-
-
- .action {
-    text-align: center;
- }
-
-.action p {
-    color: #A51890;
-}
-.spotlight {
-    margin: 5%;
-    display: flex;
-    flex-direction: column;
- }
- .weather {
-    display: none;
- }
-
- .event 
- .weather{
-    margin-left: 5%;
-    margin-right: 5%;
- }
-.event{
-    text-align: center;
-}
-.weather{
-    margin-bottom: 5%;
-    text-align: center
- }
 .footer {
     display: flex;
     flex-direction: column;
@@ -272,13 +180,14 @@ footer {
     text-align: center;
     padding-top: 1%;
     padding-bottom: 1%;
-    font-size: 8px;
+    font-size: 14px;
     border-top: 1px solid #eee;
   }
 
 main p {
     font-family: var(--paragraph-font);
     color: #0050A0;
+    font-size: 16px;
 }
 
 

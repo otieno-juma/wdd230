@@ -34,6 +34,12 @@
         font-size: 1.2rem;
     }
     nav ul { display: flex; }
-    nav ul li { flex: 1 1 auto; } 
-
+    nav ul li { flex: 1 1 auto; }
+    
+    .nav-header ul li {
+        display: block;
+    }
+    .nav-header ul li:first-child{
+        display: none;
+    }
 } /*end medium */
