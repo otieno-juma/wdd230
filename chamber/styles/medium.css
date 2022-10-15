@@ -1,0 +1,39 @@
+/* 35em is also 560px when basefont is 16px */
+@media only screen and (min-width: 35rem) {
+    nav button{
+        display: none;
+    }
+    nav ul #primaryNav{
+        display: flex;
+        /* justify-content: flex-start; */
+        margin-left: 2vw;
+        border-left: 1px rgba(0,0,0,0.3);
+    }
+    nav ul li a{
+        border: none;
+        border-right: 1px solid rgba(0,0,0,0.3);
+    }
+    button {
+        display: none;
+    }
+
+    .main-header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    nav ul#primary-nav {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+
+    nav ul li a {
+        font-size: 1.2rem;
+    }
+    nav ul { display: flex; }
+    nav ul li { flex: 1 1 auto; } 
+
+} /*end medium */
