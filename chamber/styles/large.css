@@ -1,12 +1,53 @@
 /* Larger viewports */
 @media only screen and (min-width: 64.5em) {
-	.headings h1 {
+	.heading h1 {
 		font-size: 2rem;
 		margin: 0;
 	}
 
-	.m {
+	h2 {
 		letter-spacing: 1.5pt;
 		font-size: 0.9rem;
+	}
+	nav ul li a {
+		font-size: 1.4rem;
+	}
+	
+	.main {
+		grid-template-columns: repeat(5, 1fr);
+	}
+	
+	.event {
+		grid-row: 1/2;
+	}
+		
+	.action {
+		height: 512px;
+		grid-column: 2/5;
+		grid-row: 1/3;
+	}
+		
+	.spotlight {
+		grid-column: 5/6;
+		grid-row: 1/4;
+	}
+	
+	.spotlight-3 {
+		display: block;
+	}
+		
+	.weather {
+		grid-column: 1/2;
+		grid-row: 2/3;
+	}
+	.join {
+		display: block;
+		grid-column: 1/2;
+		grid-row: 3/4;
+	}
+		
+	.news {
+		grid-column: 2/5;
+		grid-row: 3/4;
 	}
 }

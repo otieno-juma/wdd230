@@ -186,7 +186,7 @@ main{
 
 main p {
     font-family: var(--paragraph-font);
-    color: #0050A0;
+    color: var(--secondary-color);
     font-size: 16px;
 }
 

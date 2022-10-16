@@ -42,4 +42,7 @@
     .nav-header ul li:first-child{
         display: none;
     }
+    main {
+        grid-template-columns: 1fr 1fr;
+    }
 } /*end medium */
