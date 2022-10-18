@@ -9,185 +9,332 @@
     --heading-font: 'PT Sans';
     --paragraph-font: 'Playfair Display';
 }
-#content{
-    max-width: 1600px;
-    margin: 0 auto;
+/* ---------- apply to entire page ----------*/
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
 }
 
-img{
-    box-sizing: border-box;
-}    
-    
-header,
-main,
-footer {
-	max-width: 767px;
-	margin: 0 auto;
-}
-
-h3 {
-    font-size: 1rem;
-}
-
+/* ---------- body ---------- */
 body {
-    font-family: 'Playfair Display', serif;
-    margin: 0;
-    line-height: 1.5;
-    padding: 0;
-    font-size: 16px;
-    color: #E6008A;
+    margin: 15px;
+    font-size: 14px;
+    font-family: 'Playfair Display';
+}
+
+/* ---------- header ---------- */
+
+header, main, footer {
+    max-width: 960px;
+    margin: 15px auto;
 }
 
 header {
+    padding: 15px;
     background-color: var(--primary-color);
-    padding: 20px 0px;
-    position: fixed;
-    width: 100%;
-    top: 0;
-    right: 0;
-}
-.header-logo {
-    display: flex;
-    align-items: right;
-    justify-content: center;
-    border-radius: 1.5em;
-    width: 50%;
+    color: white;
+    display: grid;
+    grid-template-columns: 60% 20% 20%;
 }
 
-.header-logo img {
-    cursor: pointer;
-    height: 5rem;
-    padding: 0 20px;
+.logo {
+    display: flex;
 }
-.heading{
-    display: grid;
-    grid-template-columns: 20% 80%;
-    grid-template-rows: 1fr 1fr;
-}
-.heading h2 {
-    grid-column: 2/3;
-    grid-row: 2/3;
-}
-#hamburger-button {
+
+h1 {
     margin: 0;
-    padding: 0 8px;
+}
+
+header .heading p {
+    font-size: 16rem;
+}
+
+.socials {
+    display: flex;
+    align-self: center;
+    justify-self: center;
+    min-width: 30px;
+    max-width: 30px;
+    grid-column: 2 / 3;
+    grid-row: 1;
+}
+
+.facebookLogo, .telegramLogo {
+    min-width: 30px;
+    max-width: 30px;
+}
+
+.heading {
+    align-self: center;
+    margin: 10px;
+}
+
+#container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+/* ---------- navigation ---------- */
+/* .2rem to move it down for top & bottom */
+/* 2vw is to remove away from the edge of the page */
+/* 2vw unit means the "viewport width". That way the size will follow the size of the browser window. */
+#hamburgerBtn {
+    margin: 0px;
     background: transparent;
-    border: 1px solid rgb(200, 200, 200);
-    border-radius: 5px;
-    font-size: 2rem;
-    color: white;
+    border: none; /* remove border line of the hamburger */
+    font-size: 32px; /* increase the thickness of the line */
+    display: block; /* when open the menu item it will display as block */
+    background-color: white;
+    width:40px;
+    height: 40px;
+    align-self: center;
+    justify-self: end;
 }
 
 nav {
-    z-index: 10;
-	margin: 0 auto;
-	width: 100%;
-	font-family: var(--heading-font);
+    margin-top: 15px;
+    grid-row: 2;
+    grid-column: 1 / 4;
 }
 
 nav ul {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-    
-}
-.nav-header ul{
-	margin: 0;
-	list-style: none;
-	padding: 0;
-  
-}
-.nav-header ul li {
-    display: none;
-}
-.nav-header ul li:first-child{
-    display: block;
-}
-.nav-header ul.open li {
-    display: block;
+    list-style-type: none;
 }
 
+/* style menu item */
 nav ul li a {
-    display: block;
-    padding: 15px;
-    text-decoration: none;
-    color: white;
-    font-size: 1.2rem;
+    display: block; /* to make the entire width clickable */
+    padding: 15px 2vw; /* make the clickable area bigger. 2vw is to align all the items to the left */
+    text-decoration: none; /* remove underline */
+    color: white; /* change the text color */
 }
 
 nav ul li a:hover {
-    color: var(--secondary-color);
+    /* background-color: rgba(0, 0, 0, 0.3);  */
+    background-color: #4D4D4D;
+    color: white;
 }
 
-nav ul li.active a {
-    color: white;
+/* by default menu item in small screen should be hidden */
+nav ul li {
+    display: none;
+}
+
+nav ul.open li {
+    display: block;
+}
+
+/* when the menu is open, and the screen is wider, it still stack until refresh browser which is not right. */
+/* so please go to medium screen, select the nav ul and add #navigation next to it then it will work properly. */
+/* this is because when css assign to an id is more powerful than css assign to a class. */
+/* That's why we add id to medium css and to overrule the small screen class. */
+
+/* ---------- Responsive Navigation - Enhancing with a Close X ----------*/
+/* by default the hamburger which is the first span child to display as a bloack */
+#hamburgerBtn span:nth-child(1) {
+    display: block;
+}
+
+/* the second span child which is X to be hidden */
+#hamburgerBtn span:nth-child(2) {
+    display: none;
+}
+
+/* when the hamburger with the class is open, the first span child the hamburger to be hidden */
+#hamburgerBtn.open span:nth-child(1) {
+    display: none;
+}
+
+/* the second span child the X to display as a block */
+#hamburgerBtn.open span:nth-child(2) {
+    display: block;
+}
+
+.date {
+    text-align: center;
+	border: 1px solid #bbb;
+	padding: 0.75rem;
+	background-color: #eee;
+    max-width: 960px;
+    width: 100%;
+    color: black;
+    grid-column: 1 / 4;
+    /* margin: 2rem 0; */
+    margin-top: 15px;
+}
+
+.specialMsg {
+    grid-column: 1 / 4;
+    text-align: center;
+    padding-top: 12px;
+}
+
+/* change the default italic font style to normal */
+em {
+    font-style: normal;
+}
+
+/* ---------- picture ---------- */
+header div img {
+    width: 70px;
+    height: auto;
+    border-radius: 10px;
+}
+
+/* ---------- main ---------- */
+.main {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+    gap: 10px;
+}
+
+.main div {
+    flex: 1;
+    /* border: 1px solid #bbb; */
+    background-color: var(--secondary-color);
+}
+
+main div img {
+    width: 100%;
+    height: auto;
+}
+
+main div .label {
+    color: var(--accent-2-color);
     font-weight: bold;
 }
 
+/* ---------- hero box ---------- */
+.heroBox {
+    position: relative;
+}
 
-#hamburger-button span:nth-child(1) {display: block;}
-#hamburger-button span:nth-child(2) {display: none;}
+.heroBox p {
+    font-weight: bold;
+}
 
-#hamburger-button.open span:nth-child(1) {display: none;}
-#hamburger-button.open span:nth-child(2) {display: block;}
+.welcome {
+    position: absolute;
+    top: 25%;
+    left: 21%;
+    color: white;
+    text-shadow: .25rem .25rem .75rem #333;
+}
 
+.join {
+    position: absolute;
+    top: 33%;
+    left: 28%;
+    background-color: black;
+    color: white;
+	padding: 15px 20px;
+    border-radius: 25px;
+}
 
-.date {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    border: 1px solid white;
-    padding: 10px;
-    margin: 20px 20px 0px 20px;
+/* ---------- event ---------- */
+.eventBox {
+    padding: 15px;
+}
+
+.eventBox p {
+    margin-top: 10px;
+}
+
+/* ---------- weather box ---------- */
+.weatherBox {
+    padding: 15px;
+}
+
+.weatherBox img {
+    width: 50%;
+}
+
+/* ---------- news box---------- */
+.newsBox h2 {
+    padding: 15px;
+}
+
+.newsBox p {
+    padding: 15px;
+    color: black;
+}
+
+/* ---------- join us box ---------- */
+.joinUsBox {
+    padding: 15px;
+}
+
+.joinUs {
+    background-color: black;
+    color: white;
+    border-radius: 25px;
+    padding: 15px;
+    text-align: center;
+    font-weight: bold;
+}
+
+.joinUsBox p {
+    padding-top: 15px;
+}
+
+/* ---------- spotlight 1 ---------- */
+.spotlight-1 h2 {
+    padding: 15px;
+}
+
+.spotlight-1 p {
+    padding: 15px;
+    color: black;
+}
+
+/* ---------- spotlight 2 ---------- */
+.spotlight-2 h2 {
+    padding: 15px;
+}
+
+.spotlight-2 p {
+    padding: 15px;
+    color: black;
+}
+
+/* ---------- spotlight 3 ---------- */
+.spotlight-3 h2 {
+    padding: 15px;
+}
+
+.spotlight-3 p {
+    padding: 15px;
+    color: black;
+}
+
+/* ---------- footer ---------- */
+footer {
+    background-color: var(--primary-color);
     color: white;
 }
-main{
-    margin-top: 25rem;
+
+footer a {
+    color: white;
 }
 
-.footer {
-    display: flex;
-    flex-direction: column;
-}
-
-.footer-logo {
-    display: flex;
-    flex-direction: column;
-}
-
-.footer-logo p b{
-    font-size: 1.2em;
-}
-
-.footer-logo img {
-    align-self: center;
-    width: 100%;
-    height: 100%;
-    max-width: 100px;
-    max-height: 100px;
-    margin-left: 0;
+.part-1 {
+    display: grid;
+    gap: 10px;
     text-align: center;
-    padding: 8px;
-    border-radius: 4em;
+    justify-items: center;
+    padding: 15px;
 }
-.details {
-    margin-top: 2%;
-    margin-left: -20px;
-    margin-right: -20px;
-    background-color: var(--primary-color);
-	color: var(--accent3-color);
-	font-family: var(--heading-font);
+
+footer div img {
+    width: 70px;
+    height: auto;
+    border-radius: 10px;
+}
+
+.copyright {
     text-align: center;
-    padding-top: 1%;
-    padding-bottom: 1%;
-    font-size: 14px;
-    border-top: 1px solid #eee;
-  }
-
-main p {
-    font-family: var(--paragraph-font);
-    color: var(--secondary-color);
-    font-size: 16px;
+    padding: 15px;
+    border-top: 0.5px solid white;
 }
-
-

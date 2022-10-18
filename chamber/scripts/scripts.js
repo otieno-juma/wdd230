@@ -1,25 +1,23 @@
-// Last date modified
+// In order for javaScript to communicate with the menu we need to add class or id to html
+// function toggleMenu() {
+//     console.log("It Worked!") /* when click on hamburgerBtn, the console will print this word to prove that the following code is correct*/
+// }
 
-const lastModified = document.lastModified;
-document.getElementById("lastModified").textContent = lastModified;
-
-// current year
-
-let copyrightYear = new Date().getFullYear();
-document.getElementById("currentYear").textContent = copyrightYear;
-
-// current date and time
-
-let currentDate = new Date().toLocaleDateString('en-UK', { weekday:"long", day:"numeric", month:"long", year:"numeric"})
-document.getElementById("currentDate").textContent = currentDate;
-
-// Button
-
+// do something useful with the function
+// use javaScript to add and remove a class from html
 function toggleMenu() {
-    document.getElementById("primary-nav").classList.toggle("open");
-    document.getElementById("hamburger-button").classList.toggle("open");
+    document.getElementById("navigation").classList.toggle("open");
+    document.getElementById("hamburgerBtn").classList.toggle("open");
 }
 
-const x = document.getElementById("hamburger-button");
-
+const x = document.getElementById("hamburgerBtn")
 x.onclick = toggleMenu;
+
+// the date at the middle screen
+const datefield = document.querySelector(".date");
+const now = new Date();
+const fulldate = new Intl.DateTimeFormat("en-US", { dateStyle: "full" }).format(now);
+datefield.innerHTML = `<em>${fulldate}</em>`;
+
+// the last modified date at footer
+document.querySelector("#lastModified").textContent =  `Last Modification: ${document.lastModified}`;
