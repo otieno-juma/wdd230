@@ -58,7 +58,7 @@
 		/* ---------- hero box ---------- */
 		.heroBox {
 			grid-column: 2 / 4;
-			grid-row: 1 / 3;
+			grid-row: 1 / 2;
 		}
 	
 		.welcome {
@@ -82,7 +82,7 @@
 		/* ---------- news box ---------- */
 		.newsBox {
 			grid-column: 2 / 4;
-			grid-row: 3 / 4;
+			grid-row: 2 / 4;
 		}
 		
 		/* ---------- event box ---------- */
