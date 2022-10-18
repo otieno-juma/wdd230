@@ -14,6 +14,7 @@
 	margin: 0;
 	padding: 0;
 	box-sizing: border-box;
+    border-radius: 15px;
 }
 
 /* ---------- body ---------- */
@@ -36,6 +37,8 @@ header {
     color: white;
     display: grid;
     grid-template-columns: 60% 20% 20%;
+    border-style: groove;
+    border-radius: 15px;
 }
 
 .logo {
@@ -164,12 +167,6 @@ nav ul.open li {
     margin-top: 15px;
 }
 
-.specialMsg {
-    grid-column: 1 / 4;
-    text-align: center;
-    padding-top: 12px;
-}
-
 /* change the default italic font style to normal */
 em {
     font-style: normal;
@@ -193,16 +190,17 @@ header div img {
 .main div {
     flex: 1;
     /* border: 1px solid #bbb; */
-    background-color: var(--secondary-color);
+    background-color: gray;
 }
 
 main div img {
     width: 100%;
     height: auto;
+    border-radius: 15px;
 }
 
 main div .label {
-    color: var(--accent-2-color);
+    color: beige;
     font-weight: bold;
 }
 
@@ -248,7 +246,7 @@ main div .label {
 }
 
 .weatherBox img {
-    width: 50%;
+    width: 70%;
 }
 
 /* ---------- news box---------- */
@@ -313,6 +311,8 @@ main div .label {
 footer {
     background-color: var(--primary-color);
     color: white;
+    border-style: groove;
+    border-radius: 15px;
 }
 
 footer a {
