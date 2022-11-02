@@ -43,15 +43,24 @@
             </ul>
         </nav>
         <div class="date"></div>
+        <div id="banner">
+            <p>🤝🏼 Come join us for the chamber meet and greet Wednesday at 7:00 p.m.</p>
+        </div>
     </header>
     <main>
         <div class="main">
             <div class="heroBox">
                 <picture class="heroImg">
-                    <img src="images/chamber of commerce.jpg" alt="UAE building image">
+                    <source media="(max-width: 600px)" srcset="images/sample-small.jpg" >
+                    <source media="(max-width: 1020px)" srcset="images/sample-medium.jpg" >
+                    <source media="(min-width: 1021px)" srcset="images/sample-large.jpg" >
+                    <img src="images/sample.jpg" alt="hero image">
                 </picture>
-                <h2 class="welcome">Welcome to Safari Lion Chamber of commerce</h2>
-                <p class="join">Join Us and Attain your financial freedom</p>
+                <section class="hero-txt">
+                    <h3 class="welcome">Welcome to Safari Lion Chamber of commerce</h3>
+                    <button>Join Us</button>
+                </section>
+                
             </div>
 
             <div class="eventBox">
@@ -61,13 +70,13 @@
             </div>
 
             <div class="weatherBox">
+                <h2>Weather</h2>
                 <picture class="weatherImg">
-                    <img src="images/weatherimage.jpg" alt="weather image">
+                    <img src="images/clouds.jpg" alt="weather image">
                 </picture>
-                <h2>37°C</h2>
-                <h3>Heavy rains</h3>
-                <p>chilly morning</p>
-                <p>Light rains </p>
+                <p><span id="temp">36</span>&#176;</p>
+                <h2>Partly Cloudy</h2>
+                <p>Wind Speed: <span id="wSpeed">2</span>mph<br>Wind Chill: <span id="wChill"></span></p>
             </div>
 
             <div class="joinUsBox">
@@ -126,6 +135,7 @@
         </div>
     </footer>
     <script src="scripts/scripts.js"></script>
+    <script src="scripts/windchill.js"></script>
 </body>
 
 </html

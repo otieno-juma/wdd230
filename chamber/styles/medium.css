@@ -4,11 +4,15 @@
     /* ---------- header ---------- */
     header {
         display: grid;
-        grid-template-columns: 1fr 1fr;
-        grid-template-rows: 1fr 1fr;
+        grid-template-columns: 1fr 1fr 1fr ;
+        grid-template-rows: 1fr 1fr ;
         align-items: center;
     }
 
+    body{
+        font-size: 18px;
+        width:100%;
+    }
     /* ---------- navigation ---------- */
     nav {
         grid-row: 1;
@@ -39,13 +43,6 @@
         grid-column: 1 / 4;
         grid-row: 2 / 3;
         margin-top: 15px;
-    }
-
-    /* ---------- main ---------- */
-    .main {
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        gap: 10px;
     }
 
     /* ---------- hero box ---------- */

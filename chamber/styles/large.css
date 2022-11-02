@@ -71,7 +71,11 @@
 			color: white;
 			text-shadow: .25rem .25rem .75rem #333;
 		}
-		
+		.hero-txt {
+			grid-row: 2/3;
+			margin-top: 8px;
+			
+		}
 		.join {
 			position: absolute;
 			top: 36%;

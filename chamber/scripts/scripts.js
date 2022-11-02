@@ -21,3 +21,9 @@ datefield.innerHTML = `<em>${fulldate}</em>`;
 
 // the last modified date at footer
 document.querySelector("#lastModified").textContent =  `Last Modification: ${document.lastModified}`;
+
+const banner = document.querySelector("#banner");
+let day = date.getDay();
+
+if ((day === 1) || (day === 2)) {banner.style.display = "block"}
+else {banner.style.display = "none"}
