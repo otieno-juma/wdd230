@@ -1,0 +1,78 @@
+/* ---------- media queries for large view ----------*/
+/* 64em is also 1028px when basefont is 16px */
+@media only screen and (min-width: 64rem) {
+
+	/* if want to slim down the navigation do this */
+	/* nav ul li a {
+		padding: .5rem 1rem;
+	} */
+		/* ---------- header ---------- */
+		header {
+			display: grid;
+			grid-template-columns: 1fr 1fr 1fr;
+			grid-template-rows: 1fr 1fr;
+			align-items: center;
+		}
+	
+		/* ---------- navigation ---------- */
+		nav {
+			grid-row: 1;
+			grid-column: 2 / 3;
+			margin: 0;
+		}
+	
+		/* display side by side when in medium screen instead of block*/
+		nav ul#navigation {
+			display: flex;
+			justify-content: flex-start; /* to move right use "flex-end" */
+		}
+	
+		nav ul li {
+			display: block;
+		}
+	
+		/* get rid of the hamburger icon when in medium screen */
+		#hamburgerBtn {
+			display: none;
+		}
+	
+		.socials {
+			grid-column: 3 / 4;
+		}
+	
+		.date {
+			grid-column: 1 / 4;
+			grid-row: 2 / 3;
+			margin-top: 15px;
+		}
+
+	
+		/* ---------- footer ----------*/
+		.part1 {
+			display: grid;
+			grid-template-columns: 1fr 1fr 1fr;
+			gap: 10px;
+			align-items: center;
+			padding: 15px;
+		}
+
+	  /* Style for Discover Page */
+	  #discover-main{
+		margin: 0 auto;
+		padding: 0.60em;
+		max-width: 1000px;
+	  }
+	.discover{
+		width: 1000px;
+		margin-top: 10px;
+	}
+	.demographics{
+		font-size: 1.4em;
+	}
+	.image{
+		width: 95%;
+	}
+	.discover-p{
+		margin-top: 20px;
+	}
+} /* end large view */ 
