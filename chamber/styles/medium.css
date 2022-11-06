@@ -44,7 +44,13 @@
         grid-row: 2 / 3;
         margin-top: 15px;
     }
-    
+    .main {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-template-rows: auto;
+        gap: 10px;
+    }
+
 
     /* ---------- hero box ---------- */
     .heroBox {
