@@ -55,6 +55,9 @@
 			gap: 10px;
 		}
 	
+		A{
+			font-size: small;
+		}
 		/* ---------- hero box ---------- */
 		.heroBox {
 			grid-column: 2 / 4;
