@@ -46,7 +46,11 @@
 			margin-top: 15px;
 		}
 	
-
+		#banner {
+			padding: 1rem;
+			background-color:#A51890;
+			font-size: 1.2rem;
+		}
 		/* ---------- main ---------- */
 		.main {
 			display: grid;
@@ -54,7 +58,7 @@
 			grid-template-rows: auto;
 			gap: 10px;
 		}
-	
+		
 		/* ---------- hero box ---------- */
 		.heroBox {
 			grid-column: 2 / 4;
