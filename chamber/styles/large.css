@@ -145,5 +145,24 @@
 			align-items: center;
 			padding: 15px;
 		}
+		 /* Style for Discover Page */
+		#discover-main{
+			margin: 0 auto;
+			padding: 0.60em;
+			max-width: 1000px;
+		  }
+		.discover{
+			width: 1000px;
+			margin-top: 10px;
+		}
+		.demographics{
+			font-size: 1.4em;
+		}
+		.image{
+			width: 95%;
+		}
+		.discover-p{
+			margin-top: 20px;
+		}
+	} /* end large view */ 
 	
-	} /* end large view */

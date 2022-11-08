@@ -371,3 +371,96 @@ footer div img {
     padding: 15px;
     border-top: 0.5px solid white;
 }
+i{
+    font-size: 0.6em;
+    margin: 0.5px;
+}
+.label {
+	font-family: Arial, sans-serif;
+	font-weight: 700;
+}
+
+#visits {
+	color: navy;
+	font-weight: bolder;
+	font-size: larger;
+}
+
+.today {
+	color: tomato;
+}
+
+.discover{
+    margin: auto;
+    width: 90%; /*add */
+    text-align: center;
+    background-color: var(--accent3-color);
+    box-shadow: 0 5px 10px 5px;
+    padding: 4px;
+    margin-top: -10px;
+}
+.discover .image, a{
+    text-decoration: none;
+
+}
+.demographics{
+    display: block;
+    margin: 0 0 1em 0;
+    font-size: larger;
+    text-align: left;
+    list-style: circle;
+    color: #000000;
+    text-decoration: none;
+
+}
+.image{
+    margin: auto;
+    text-align: left;
+    background-color: var(--accent3-color);
+    margin-top: 2.4em;
+    width: 90%;
+    padding-top: 0.2em;
+    padding-bottom: 1.5em;
+    box-shadow: 0 5px 10px 5px;
+    margin-bottom: 2em;
+}
+.image img{
+    display: block;
+    width: 100%;
+    padding: 3px 18px;
+    height: auto;
+    margin-top: 0.5em;
+    border-radius: 15px;
+}
+.image p{
+    font-size: 1.3em;
+    padding: 15px;
+    width: fit-content;
+    font-family: var(--paragraph-font);
+}
+.image img[data-src] {
+    filter: blur(0.2em);
+  }
+  
+.image img {
+    filter: blur(0em);
+    transition: filter 0.4s;
+  }                            
+.image .section h3{
+    color: var(--primary-color);
+}
+.discover-p{
+    text-align: center;
+    margin-top: -70px;
+    padding: 20px;
+    font-size: 1.4em;
+    background-color: var(--accent3-color);
+    color: #000000;
+    border-radius: 2em;
+    font-weight: 500;
+    margin-left: 9px;
+    margin-right: 9px;
+    font-family: var(--heading-font);
+    
+}
+ 
