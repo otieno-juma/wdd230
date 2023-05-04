@@ -375,15 +375,17 @@ i{
     font-size: 0.6em;
     margin: 0.5px;
 }
+
+/* Discover page */
 .label {
-	font-family: Arial, sans-serif;
+    font-family: 'Playfair Display';
 	font-weight: 700;
 }
 
 #visits {
 	color: navy;
 	font-weight: bolder;
-	font-size: larger;
+	font-size: small;
 }
 
 .today {
@@ -424,7 +426,7 @@ i{
     box-shadow: 0 5px 10px 5px;
     margin-bottom: 2em;
 }
-.image img{
+.image1{
     display: block;
     width: 100%;
     padding: 3px 18px;
