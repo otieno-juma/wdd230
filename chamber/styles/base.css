@@ -245,6 +245,10 @@ main div .label {
 
 .eventBox p {
     margin-top: 10px;
+    
+}
+.eventBox h2 {
+    color: whitesmoke;
 }
 
 /* ---------- weather box ---------- */
