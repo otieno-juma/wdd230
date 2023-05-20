@@ -243,6 +243,10 @@ main div .label {
     padding: 15px;
 }
 
+.eventBox h2{
+    color: whitesmoke;
+}
+
 .eventBox p {
     margin-top: 10px;
 }
