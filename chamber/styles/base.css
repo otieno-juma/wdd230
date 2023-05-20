@@ -22,6 +22,7 @@ body {
     margin: 15px;
     font-size: 14px;
     font-family: 'Playfair Display';
+    
 }
 
 /* ---------- header ---------- */
@@ -47,6 +48,9 @@ header {
 
 h1 {
     margin: 0;
+}
+h3{
+    color: whitesmoke;
 }
 
 header .heading p {
@@ -243,9 +247,6 @@ main div .label {
     padding: 15px;
 }
 
-.eventBox h2{
-    color: whitesmoke;
-}
 
 .eventBox p {
     margin-top: 10px;
