@@ -24,6 +24,9 @@ tr:first-child th {
     border: 1px solid black;
     color: white; 
 }
+.pure{
+    background-color: black;
+}
 th{
     background-color: white;
 }
@@ -34,8 +37,11 @@ th, td{
     padding: 17px 15px;
     border: 1px solid black;
 }
-tbody tr:nth-child(even){
+tbody tr:nth-child(odd){
     background-color:grey;
+}
+tbody tr:nth-child(even){
+    background-color: rgb(150, 150, 150);
 }
 
 @media only screen and (min-width:  35em) {
