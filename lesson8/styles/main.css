@@ -9,7 +9,7 @@
 caption{
     padding: 10px;
     caption-side: bottom;
-    color: white;
+    color: black;
     font-size: .85rem;
 }
 table{
@@ -19,9 +19,10 @@ table{
     border-collapse: collapse;
 }
 
-tr:first-child th, .highlight{
+tr:first-child th {
     background-color: black;
     border: 1px solid black;
+    color: white; 
 }
 th{
     background-color: white;
