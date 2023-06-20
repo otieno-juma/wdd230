@@ -9,7 +9,7 @@
 caption{
     padding: 10px;
     caption-side: bottom;
-    color: black;
+    color: white;
     font-size: .85rem;
 }
 table{
@@ -20,11 +20,11 @@ table{
 }
 
 tr:first-child th, .highlight{
-    background-color: #0067b9;
+    background-color: black;
     border: 1px solid black;
 }
 th{
-    background-color: #0067b9;
+    background-color: white;
 }
 td{
     text-align: center;
