@@ -152,3 +152,63 @@
     }
 
 } /* end of medium view */
+ /*Style section for Discover Page  */
+ .image{
+    display: flex;
+ }   
+     
+ .image img{
+    padding: 30px;
+    transition: 1s;
+ }
+ .image img:hover{
+    transform: scale(1.1);
+    z-index: 2;
+    opacity: 90%;
+ }
+ /* --------STYLING SECTION FOR JOIN PAGE---------- */
+ .fields{
+    font-size: 1.4rem;
+}
+/* -----------STYLING FOR DIRECTORY PAGE */
+.directory{
+    grid-template-columns: repeat(2, 1fr);
+}
+.list section {
+	flex-direction: row;
+	justify-content: left;
+}
+.list section > *{
+    text-align: left;
+}
+.list section p{
+    font-size: 1.4em;
+}
+.list section{
+    align-items: center;
+}
+#cards{ 
+    display: flex;
+    margin: 3em;
+}
+#cards section{
+    margin: 3em;
+}
+.close{
+    right: 25px;
+    top: 0;
+}
+
+.form-content .cancelbtn {
+    width: auto;
+}
+.class{
+    flex-direction: row;
+    gap: 50px;
+}
+.label-flex{
+    width: 100%;
+  }
+  #spotlight section{
+    width: 100%;
+  }
