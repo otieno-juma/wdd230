@@ -1,4 +1,4 @@
-const api = "https:///otieno-juma.github.io/wdd230/chamber/scripts/json/data.json",
+const api = "https://otieno-juma.github.io/wdd230/chamber/scripts/json/data.json",
 businessCards = document.querySelector("#spotlight");
 
 async function getBusinesses() {
