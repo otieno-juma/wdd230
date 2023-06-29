@@ -1,0 +1,56 @@
+const api ="https://github.com/otieno-juma/wdd230/blob/d2e2e8f1d457034c5cc73d3ca1c481bc97417a34/chamber/scripts/json/data.json" ,
+businessCards = document.querySelector(".directory");
+
+fetch(api)
+    .then(function (response) {
+        return response.json();
+    })
+    .then(function (jsonObject) {
+        const companies = jsonObject["company"]
+        companies.forEach(displayCompanies);
+    })  
+function displayCompanies(company){
+    let card = document.createElement('section');
+    let name = document.createElement('h3')
+    let logo = document.createElement('img');
+    let phone = document.createElement('p')
+    let address = document.createElement('p'); 
+    let membership = document.createElement('p'); 
+    let url = document.createElement('a'); 
+
+    logo.setAttribute('src', `${company.imagepath}`);
+    logo.setAttribute('alt', `${company.name} logo`);
+    logo.setAttribute('loading', 'lazy'); 
+    name.textContent = `${company.name}`;
+    address.textContent = `${company.address}`;
+    phone.textContent = `${company.phonenumber}`;
+    membership.textContent = `${company.level}`;
+    url.textContent = `Business Website`
+    url.setAttribute("href", `${company.websiteurl}`);
+    url.setAttribute('target', '_blank');
+
+    card.appendChild(logo)
+    card.appendChild(name)
+    card.appendChild(address)
+    card.appendChild(phone)
+    card.appendChild(membership)
+    card.appendChild(url)
+
+    document.querySelector('div.directory').appendChild(card);
+}
+const gridbutton = document.querySelector("#grid");
+const listbutton = document.querySelector("#list");
+const display = document.querySelector(".directory");
+
+
+gridbutton.addEventListener("click", () => {
+	display.classList.add("grid");
+	display.classList.remove("list");
+});
+
+listbutton.addEventListener("click", showList); // example using defined function
+
+function showList() {
+	display.classList.add("list");
+	display.classList.remove("grid");
+}
