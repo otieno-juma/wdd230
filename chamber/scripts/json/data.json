@@ -13,7 +13,9 @@
             "address" : "Ronald Ngala street, Nairobi, Kenya",
             "phonenumber": "11-949-3222",
             "websiteurl": "https://www.Airtel.com/",
-            "imagepath": "images/airtelship"
+            "imagepath": "images/airtel.webp",
+            "level": "Gold Membership"
+
         },
         {
             "name": "KENYA POWER AND LIGHTING COMPANY",
