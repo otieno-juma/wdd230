@@ -1,140 +1,155 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Safari Lion Chamber of Commerce</title>
-    <meta name="author" content="Paul Juma Otieno">
-    <meta name="description" content="This is the home page for the website planning document for the chamber of commerce.">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=PT+Sans&family=Playfair+Display&display=swap" rel="stylesheet">
-    <link rel="shortcut icon" href="images/icon_0ee79f964a074d0fbb0de35eeea68509.ico">
-    <link href="styles/normalize.css" rel="stylesheet">
-    <link href="styles/base.css" rel="stylesheet">
-    <link href="styles/medium.css" rel="stylesheet">
-    <link href="styles/large.css" rel="stylesheet">
+  <meta charset="UTF-8" >
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" >
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" >
+  <meta name="Author" content="Paul Juma Otieno" >
+  <meta name="description"
+    content="Chamber of Commerce Home Page WDD230: Web Frontend Development at Brigham Young University - Idaho" >
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" >
+  <link rel="stylesheet" href="styles/base.css" >
+  <link rel="stylesheet" href="styles/medium.css">
+  <link rel="stylesheet" href="styles/large.css">
+  <link rel="shortcut icon" href="images/icon_0ee79f964a074d0fbb0de35eeea68509.ico">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@1,300&family=Roboto:ital,wght@1,300&display=swap">
+  <title>Home</title>
 </head>
 
-<body>
-    <header>
-        <div id="container">
-            <div class="logo">
-            <img src="images/webp image.webp" alt="safari lion Chamber of Commerce logo">
-                <div class="heading">
-                    <h1>Safari Lion</h1>
-                    <p>Chamber of Commerce</p>
-                </div>
-            </div>
+<body class="body">
+  <div id="content">
+
+  <header>
+    <nav class="navigation">
+    <div class="navbar-wraper">                      
+    <a href="index.html"><img class="logo" src="./images/logo.webp" alt="chamber logo"></a>
+    <a class="name" href="./index.html">
+        <span class="chamberName">Safari Lion</span>
+        <br>
+        Chamber of commerce 
+    </a>
+    <ul>
+        <li><a href="discover.html">Discover</a></li>
+        <li><a href="directory.html">Directory</a></li>
+        <li><a href="join.html">Join</a></li>
+        <li><a href="contactus.html">Contact</a></li>
+    </ul>
+    <div class="socials">
+        <a href="https://www.facebook.com/">
+            <img src="./images/facebook.png"  alt="facebook logo">
+        </a>
+        <a href="https://www.linkedin.com/">
+            <img src="./images/linkedin-logo.png"  alt="linkedin logo">
+        </a>
+    </div>
+    <button id="hamburgerBtn"><span>&#9776;</span><span>ⓧ</span></button>
+    <span class="date"></span>
+    <span id="meeting"></span>
+    </div>
+    <ul class="toggle">
+        <li class="active"><a href="#">Home</a></li>
+        <li><a href="discover.html">Discover</a></li>
+        <li><a href="directory.html">Directory</a></li>
+        <li><a href="join.html">Join</a></li>
+        <li><a href="contactus.html">Contact</a></li>
+    </ul>
+</nav>
+</header>
+<main class="home-main">
+
+    <div id="hero">
+        <picture>
+            <source srcset="images/sample-small.webp" media="(min-width: 65em)">
+            <source srcset="images/sample-medium.webp" media="(min-width: 35em)">
+          <img src="images/sample.jpg" alt="hero">
+        </picture>
+        <p>Come meet new ideas<br>Expound your thinking!</p>
+        <a href="join.html" class="button">Join us</a>
+    </div>
+    <div id="news">
+        <span id="small-meeting"></span>
+        <h2>Latest news</h2>
+        <a href="#">
+            <h3>Government new policies </h3>
+            <p><strong>The Safari Lion chamber invites you to come and familiarize the new government policies.</strong></p>
+        </a>
+        <a href="#">
+            <h3>New Appointments</h3>
+            <p><strong>The secretariate, annouces new job opportunities in the county.</strong></p>
+        </a>
+        <a href="#"> 
+            <h3>China and Kenya</h3>
+            <p><strong>China, The Safari Lion Chamber of Commerce partner on trade.</strong></p>
+        </a>
+    </div>
+    <div id="spotlight">
+        
+    </div>
+    <div id="join">
+        <h2>Learn about Us</h2>
+        <p><strong>Learn the benefits of being part of the Safari Lion Chamber of Commerce.</strong></p>
+        <br>
+        <a href="join.html" class="button">Join Us</a>
+    </div>
+    <div id="event-weather">
+        <div id="event">  
+            <h2>Event</h2>
+            <a href="#">
+                <img src="images/newsfeed.jpg" alt="breakfast meeting event banner">
+            </a>
         </div>
-        <button id="hamburgerBtn"><span>&#9776;</span><span>X</span></button>
-        <div class="socials">
-            <a href="https://www.facebook.com/" target="_blank"><img class="facebookLogo" src="images/facebook.png" alt="facebook logo"></a>
-            <a href="https://www.telegram.com/" target="_blank"><img class="telegramLogo" src="images/telegram.png" alt="telegram logo"></a>
+        <div id="weather">
+            <h2>Weather</h2>
+            <img class="weatherIcon" src="images/cloudy.png" alt="Weather Icon">
+            <br>
+            <p class="temperature"><strong><span id="temperature"></span></strong></p>
+            <br>
+            <p class="feels-like"><strong><span id="feelsLike"></span></strong></p>
+            <br>
+            <p class="sky-condition"><strong><span class="skyCondition"></span></strong></p>
+            <br>    
+            <p class="wind-speed"><strong><span id="windSpeed"></span></strong></p>
+            <br>
+            <p class="wind-chill"><strong><span id="windChill"></span></strong></p>
         </div>
-        <nav>
-            <ul id="navigation">
-                <li><a href="#">Discovery</a></li>
-                <li><a href="#">Directory</a></li>
-                <li><a href="#">Join</a></li>
-                <li><a href="#">Contact</a></li>
-            </ul>
-        </nav>
-        <div class="date"></div>
-        <div id="banner">
-            <p>🤝🏼 Come join us for the chamber meet and greet Wednesday at 7:00 p.m.</p>
-        </div>
-    </header>
-    <main>
-        <div class="main">
-            <div class="heroBox">
-                <picture class="heroImg">
-                    <source media="(max-width: 600px)" srcset="images/sample-small.jpg" >
-                    <source media="(max-width: 1020px)" srcset="images/sample-medium.jpg" >
-                    <source media="(min-width: 1021px)" srcset="images/sample-large.jpg" >
-                    <img src="images/sample.jpg" alt="hero image">
-                </picture>
-                <section class="hero-txt">
-                    <h3 class="welcome">Welcome to Safari Lion Chamber of commerce</h3>
-                </section>
-                
-            </div>
+    </div>
 
-            <div class="eventBox">
-                <h3>Come Meet with the big boys</h3>
-                <p>Meet, interact and grow with us</p>
-                <p>Every Tuesday evening at 1:00pm</p>
-            </div>
-
-            <div class="weatherBox">
-                <h2>Weather</h2>
-                <picture class="weatherImg">
-                    <img src="images/clouds.jpg" alt="weather image">
-                </picture>
-                <p><span id="temp">36</span>&#176;</p>
-                <h2>Partly Cloudy</h2>
-                <p>Wind Speed: <span id="wSpeed">2</span>mph<br>Wind Chill: <span id="wChill"></span></p>
-            </div>
-
-            <div class="joinUsBox">
-                <p class="joinUs">Join US</p>
-                <p>Come see how your business can grow to it's full potential.</p>
-            </div>
-
-            <div class="newsBox">
-                <picture>
-                    <img src="images/newsfeed.jpg" alt="meeting image">
-                </picture>
-                <p class="label">NEWS FEEDS</p>
-                <p><a href="https://www.kenyachamber.or.ke/2022/06/08/the-chamber-president-launches-his-three-year-report-at-kncci/"></a>The chamber President launches his three year report at KINCC</p>
-            </div>
-
-            <div class="spotlight-1">
-                <picture>
-                    <img src="images/transit.jpg" alt="Goods on transit">
-                </picture>
-                <p class="label">INTERNATIONAL TRADE FEEDS</p>
-                <p><a href="https://santandertrade.com/en/portal/analyse-markets/china/foreign-trade-in-figures"></a>China has become the world's largest exporter and ranks second among the world’s largest importers.</p>
-            </div>
-
-            <div class="spotlight-2">
-                <picture>
-                    <img src="images/gikomba market.jpg" alt="market image">
-                </picture>
-                <p class="label">INTERNATIONAL TRADE FEEDS</p>
-                <p><a href="https://www.government.nl/topics/maritime-transport-and-seaports/protecting-maritime-transport-and-seaports-against-terrorism">insecurity at the ports have greatly affected small businesses that depend on imports from China and Europe</a></p>
-            </div>
-
-            <div class="spotlight-3">
-                <picture>
-                    <img src="images/small business.jpg" alt="small business image">
-                </picture>
-                <p class="label">BAN ON SECOND HAND CLOTHES</p>
-                <p><a href="https://www.bbc.com/news/world-africa-35706427">The EAC directed member countries to buy their textiles and shoes from within the region with a view to phasing out imports by 2019.</a></p>
-            </div>
-        </div>
-    </main>
-    <footer>
-        <div class="part-1">
-            <img src="images/lion-2885618_960_720.jpg" alt="Safari Lion chamber of commerce">
-            <div class="part-2">
-            <p>Safari Lion Chamber of Commerce</p>
-            <p>254 SPINE ROAD, Kayole II, <br>Lee way Brooklyne<br>40600, SIAYA.</p>
-            </div>
-            <div class="part-3">
-            <p>safarilion.com</p>
-            <p>254-115244577</p>
-            <a href="https://www.google.com/maps/place" target="_blank">Location Map</a>
-            </div>
-        </div>
-        <div class="copyright">
-            <span>&copy; 2022 Safari Lion Chamber of Commerce | OTIENO PAUL JUMA | WDD 230 Project | <span id="lastModified"></span></span>
-        </div>
-    </footer>
-    <script src="scripts/scripts.js"></script>
-    <script src="scripts/windchill.js"></script>
+</main>
+<footer>
+  <div class="footer">
+      <div id="logo">
+        <a href="index.html"><img src="images/logo.webp" alt="chamber logo"></a>
+          <p>
+              <b>Safari Lion<br>
+              Chamber of Commerce</b>
+              <br>
+              254 kayole along springroad
+              LKCM, 00400</p>
+              <br>
+      </div>
+      <div id="chamber-map">
+          Safarilion.com
+          <br>
+          +254 (115)-277 544
+          <br>
+          <a href="https://maps.app.goo.gl/oeHFmLJuRKbcZKfXA">
+              📌 Location pin</a>
+          <br>
+      </div>
+  </div>
+  <div class="footer1">
+    <h1>
+        &copy; <span id="current_year"></span> Safari Lion .:|:. Paul Juma Otieno .:|:. WDD 230 Project .:|:. Last
+        Updated: <span id="last_update"></span>
+      </h1>
+  </div>
+  <p class="weather-source"><a href="https://openweathermap.org">OpenWeatherMap.org</a></p>
+</footer>
+</div>
+<script src="scripts/spotlight.js"></script> 
+  <script src="scripts/weather.js"></script>
+  <script src="scripts/greet.js"></script>
+  <script src="scripts/home.js"></script>
 </body>
 
-</html
+</html>

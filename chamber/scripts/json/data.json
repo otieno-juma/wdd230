@@ -1,0 +1,99 @@
+{
+    "company": [
+        {
+            "name": "SAFARICOM",
+            "address": "Tom Mboya Street, Moi avenue Rd, Nairobi, ",
+            "phonenumber": "0910-035-2344",
+            "websiteurl": "https://www.safaricom.com/",
+            "imagepath": "images/safaricom.webp",
+            "level": "Gold Membership"
+        },
+        {
+            "name" : "AIRTEL",
+            "address" : "Ronald Ngala street, Nairobi, Kenya",
+            "phonenumber": "11-949-3222",
+            "websiteurl": "https://www.Airtel.com/",
+            "imagepath": "images/airtelship"
+        },
+        {
+            "name": "KENYA POWER AND LIGHTING COMPANY",
+            "address": "Kisuma Road Kisumu 00400, Kenya",
+            "phonenumber": "12-278-7000",
+            "websiteurl": "https://www.kplc.com/",
+            "imagepath": "images/kplc.webp",
+            "level": "Gold Membership"
+        },
+        {
+            "name": "AFIA CENTER",
+            "address" : "Kenyatta avenue, opposite Lunga Church, 31 broadstreet way, Nairobi, KENYA",
+            "phonenumber": "0111-672-0153",
+            "websiteurl": "https://www.afyacenter.com/",
+            "imagepath": "images/afyacenter.webp",
+            "level": "Silver Membership"
+        },
+        {
+            "name": "BEST WESTERN PLUS",
+            "address": "Western plus Building, Sarit towers, Westlands, Nairobi",
+            "phonenumber": "125-991-64482",
+            "websiteurl": "https://www.bestwesternplus.com/",
+            "imagepath": "images/bestwestern.webp",
+            "level": "Gold Membership"
+        },
+        {
+            "name": "TELCOM PLAZA",
+            "address": "Kimathi street l, Waiyaki way, opposite parliamnet buildings, Nairobi",
+            "phonenumber": "901-837-4536",
+            "websiteurl": "https://www.telcom.com./",
+            "imagepath": "images/telkom.webp",
+            "level" : "Bronze Membership"
+        },
+        {
+            "name": "COLORSHADES GRAPHICS LTD.",
+            "address": "Riverroad, oposite Lunthuli way, Nairobi",
+            "phonenumber": "013-277-0400",
+            "websiteurl": "https://www.colorshades.com/",
+            "imagepath": "images/colorshade.webp",
+            "level": "Gold Membership"
+        },
+        {
+            "name": "KENYA COMMERCIAL BANK",
+            "address": "Moi Avenue, 4th street, Nairobi Kenya",
+            "phonenumber": "803-601-3900",
+            "websiteurl": "https://www.kcbgroup.com/",
+            "imagepath": "images/KCB.webp",
+            "level": "NP Membership"
+        },
+        {
+            "name": "SHOPRITE",
+            "address": "Tom Mboya street, Opposite Galitos plaza",
+            "phonenumber": "912-973-0350",
+            "websiteurl": "https://www.kenyanwallstreet.com/",
+            "imagepath": "images/Shoprite.webp",
+            "level": "Bronze Membership"
+        },
+        {
+            "name": "WHO",
+            "address": "Parliament buildings, Nairobi Kenya",
+            "phonenumber": "013-460-5644",
+            "websiteurl": "https://www.afro.who.int/",
+            "imagepath": "images/WHO.webp",
+            "level": "NP Membership"
+        },
+        {
+            "name": "OTC ",
+            "address": "Waiyaki way, Likoni road 1265, Nairobi",
+            "phonenumber": "021-731-1404",
+            "websiteurl": "https://www.foursquare.com/",
+            "imagepath": "images/OTC.webp",
+            "level": "Silver Membership" 
+        },
+        {
+            "name": "STANDARD GROUP",
+            "address": "Habari center, Standard plaza opp Laki way,Nairobi ",
+            "phonenumber": "223-993-8863",
+            "websiteurl": "https://www.standardmedia.co.ke/",
+            "imagepath": "images/SG.webp",
+            "level": "Silver Membership"
+        }
+    ]
+}

@@ -1,135 +1,106 @@
 /* ---------- media query for medium view ----------*/
-@media only screen and (min-width: 35em) {
-    
-    /* ---------- header ---------- */
-    header {
-        display: grid;
-        grid-template-columns: 1fr 1fr 1fr ;
-        grid-template-rows: 1fr 1fr ;
-        align-items: center;
+@media only screen and (min-width:  35em) {
+    #logo {
+		display: flex;
+		flex-direction: row;
+	}
+    #logo img {
+        margin-left: 0;
+        margin-top: 60px;
+    }
+    #logo p {
+        padding-top: 50px;
+    }
+    #hero p {
+        font-size: 4.5em;
+        width: 100%;
+        top: 23%;
     }
 
-    body{
-        font-size: 18px;
-        width:100%;
-    }
-    /* ---------- navigation ---------- */
-    nav {
-        grid-row: 1;
-        grid-column: 2 / 3;
-        margin: 0;
-    }
-
-    /* display side by side when in medium screen instead of block*/
-    nav ul#navigation {
-        display: flex;
-        justify-content: flex-start; /* to move right use "flex-end" */
-    }
-
-    nav ul li {
-        display: block;
-    }
-
-    /* get rid of the hamburger icon when in medium screen */
-    #hamburgerBtn {
-        display: none;
-    }
-
-    .socials {
-        grid-column: 3 / 4;
-    }
-
-    .date {
-        grid-column: 1 / 4;
-        grid-row: 2 / 3;
-        margin-top: 15px;
-    }
-    .main {
-        display: grid;
-        grid-template-columns: 1fr 1fr 1fr 1fr;
-        grid-template-rows: auto;
-        gap: 10px;
-    }
-
-    /* ---------- hero box ---------- */
-    .heroBox {
-        grid-column: 2 / 4;
-        grid-row: 1 / 2;
-    }
-
-    .welcome {
-        position: absolute;
-        top: 30%;
-        left: 29%;
-        color: white;
-        text-shadow: .25rem .25rem .75rem #333;
-    }
-    
-    .join {
-        position: absolute;
-        top: 36%;
-        left: 34%;
-        background-color: black;
-        color: white;
-        padding: 15px 20px;
-        border-radius: 25px;
-    }
-
-    /* ---------- news box ---------- */
-    .newsBox {
-        grid-column: 2 / 4;
-        grid-row: 2 / 3;
-    }
-    
-    /* ---------- event box ---------- */
-    .eventBox {
-        grid-column: 1 / 2;
-        grid-row: 1 / 2;
-    }
-
-    /* ---------- weather box ---------- */
-    .weatherBox {
-        grid-column: 1 / 2;
-        grid-row: 2 / 3;
-    }
-
-    .weatherBox img {
+    #hero .button {
+        font-size: 1.8rem;
         width: 100px;
-        align-items: center;
-        justify-content: center;
+        left: calc(45% - 10px);
     }
 
-    /* ---------- join us box ---------- */
-    .joinUsBox {
-        grid-column: 1 / 2;
-        grid-row: 3 / 4;
+    #spotlight {
+        display: flex;
+        flex-direction: row;
+    }
+    #hero img {
+        width: 105%;
+        /* margin-left: 18px; */
+        height: auto;
+     }
+    #event-weather {
+        display: flex;
+        width: 100%;
+    }
+    #news p{
+        font-size: 1.2em;
+     }
+    #weather {
+        padding-right: 20px;
+        margin-left: 0;
+        grid-column: 2/3;
+        grid-row: 1;
+    }
+    #event{
+        grid-column: 1/2;
+        grid-row: 1;
+        margin-bottom: 15px;
+    }
+    #temperature {
+        font-size: 4em;
+    }
+    .temperature{
+        font-size: 0.4rem;
+    }
+    #event a img {
+        min-width: 20.2em;
+    }
+    #join {
+        display: block;
+        text-align: center;
+        margin: 5%;
+        /* margin: 0 0 13% 0; */
+        box-shadow: 0 0 10px #4d4e50;
+        padding: 10px;
+        border-radius: 10px;
+    }
+    #join a{
+        color: #eee;
+        background-color: #0050A0
     }
 
-    /* ---------- spotlight 1 ---------- */
-    .spotlight-1 {
-        grid-column: 4 / 5;
-        grid-row: 1 / 2;
+   #join a:hover{
+    background-color: #A51890;
+   }
+    #chamber-map {
+        padding-top: 70px;
+        font-size: 1.1em;
+        text-align: right;
+        margin-right: 10%;
+        margin-left: auto;
     }
-
-    /* ---------- spotlight 2 ---------- */
-    .spotlight-2 {
-        grid-column: 4 / 5;
-        grid-row: 2 / 3;
+    .footer{
+        display: flex;
+        flex-direction: row;
+        flex-wrap:wrap;
+        
     }
-
-    /* ---------- spotlight 3 ---------- */
-    .spotlight-3 {
-        grid-column: 4 / 5;
-        grid-row: 3 / 4;
+   .navbar-wraper #meeting{
+        display: block;
+        grid-row: 3/4;
+        grid-column: 1/5;
+        background-color: var(--primary-color);
+        margin: 0 -10px 0 -10px;
+        padding: 10px 10px;
+        font-size: 1.2em;
+        color: var(--accent3-color);
     }
-    
-    /* ---------- footer ----------*/
-    .part-1 {
-        display: grid;
-        grid-template-columns: 1fr 1fr 1fr;
-        gap: 10px;
-        align-items: center;
-        padding: 15px;
+    #small-meeting{ 
+        display: none;
     }
     /* Style for Discover Page */
     #discover-main{
