@@ -1,6 +1,6 @@
 *{
     text-align: center;
-    background-color: bisque;
+    background-color: rgb(31, 240, 12);
 }
 p{
     font-weight: bold;
@@ -8,13 +8,13 @@ p{
     font-style: oblique;
 }
 h1, h2{
-    background-color: burlywood;
+    background-color: rgb(75, 187, 90);
     margin: 1em;
     border-radius: 10px;
     padding: 10px;
 }
 img{
-    background-color: burlywood;
+    background-color: rgb(75, 187, 90);
 }
 figcaption{
     font-style: oblique;
@@ -23,5 +23,5 @@ figcaption{
 }
 a{
     text-decoration: none;
-    background-color: burlywood;
+    background-color: rgb(75, 187, 90);
 }
