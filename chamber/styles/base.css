@@ -200,8 +200,8 @@ footer {
  }
 
  .button {
-    background-color: var(--accent1-color);
-    color: white;
+    background-color: var(--secondary-color);
+    color: rgba(249, 249, 253, 0.911);
     border-radius: 10px;
     padding: 20px;
     margin: 3%;
@@ -217,7 +217,7 @@ footer {
  }
 
 .button:hover {
-    background-color: var(--primary-color);
+    background-color: var( --accent3-color);
  }
 
  #news {
