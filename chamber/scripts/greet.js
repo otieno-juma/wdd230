@@ -1,4 +1,4 @@
-date =  new Date()
+date = new Date();
 const dayOfWeek = date.getDay()
 
 let message;
