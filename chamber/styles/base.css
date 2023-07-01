@@ -116,7 +116,7 @@ img{
 	background-color: var(--accent2-color);
 }
 .navigation .toggle li a{
-	background-color: var(--secondary-color);
+	background-color: var(--primary-color);
 	color: var(--accent3-color);
 	border-top: 1px solid var(--accent3-color);
 }
