@@ -21,6 +21,6 @@ const submit = document.getElementById('submitDate')
 
 const fulldate = new Intl.DateTimeFormat("en-US", {dateStyle: "full"}).format(date);
 datefield.innerHTML = `${fulldate}`
-submit.textContent = String(String(date.getMonth() + 1).padStart(2, '0') + "/" + date.getDate()).padStart(2, '0') + "/" + date.getFullYear() + " " + date.getHours() + ":" + date.getMinutes() + ":" + date.getSeconds();
+submit.textContent = String(String(date.getMonth() + 1).padStart(2, '0') + "/" + date.getDate()).padStart(2, '0') + "/" + date.getFullYear() + ":" + date.getHours() + ":" + date.getMinutes() + ":" + date.getSeconds();
 console.log("${fulldate}")
 console.log("${submissiondate}")

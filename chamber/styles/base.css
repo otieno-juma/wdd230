@@ -61,7 +61,7 @@ img{
 }
 
 .navbar-wraper .name .chamberName{
-	font-size: 1.3em;
+	font-size: 1.4em;
 }
 .navbar-wraper .socials {
 	margin-top: 24px;
@@ -118,7 +118,7 @@ img{
 .navigation .toggle li a{
 	background-color: var(--primary-color);
 	color: var(--accent3-color);
-	border-top: 1px solid var(--accent3-color);
+	border-top: 1px solid var(--accent1-color);
 }
 .navigation button{
 	margin: .2rem 2vw;
@@ -196,12 +196,10 @@ footer {
     padding: 5%;
     max-width: 100%;
     color: rgba(0, 0, 0, 0.9);
-    text-shadow:1px 1px 2px #A51890, 1px 1px 10px #4d4e50 ;
  }
 
  .button {
     background-color: var(--secondary-color);
-    color: rgba(249, 249, 253, 0.911);
     border-radius: 10px;
     padding: 20px;
     margin: 3%;
