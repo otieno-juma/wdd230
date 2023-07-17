@@ -1,0 +1,108 @@
+@media only screen and (min-width: 35em){
+    .heroBtn a:hover::after{
+        content: ' 🧃';
+        width: 100%;
+    }
+    .navbar label.logo{
+        font-size: 33px;
+        padding: 0 50px;
+    }
+    .hero-text{
+        max-width: 70%;
+    }
+    .hero-text p{
+        font-size: 1.4rem;
+    }
+    .hero-text h1{
+        font-size: 2rem;}
+    .about .row{
+        flex-wrap: nowrap;
+    }
+    .heading{
+        font-size: 3rem;
+    }
+    .about .row .content h3{
+        font-size: 2.5rem;
+    }
+    .menu .box-container .box:nth-child(4){
+        display: block;
+    }
+    .menu .box-container .box:nth-child(5){
+        display: block;
+    }
+    .menu .box-container .box:nth-child(6){
+        display: block;
+    }
+    .footer .share i{
+        font-size: 2rem;
+        width: 4rem;
+        line-height: 4rem;
+    }
+    .footer .credit h2, .contacts h2{
+        font-size: 1.7rem;
+    }
+    .weathertotal-container{
+        flex-wrap: nowrap;
+    }
+    .freshtotal p{
+        font-size: 1.5rem;
+    }
+    .w-forcast{
+        display: flex;
+    }    
+    /* --------ABOUT US STYLING SECTION----------- */
+
+    .aboutus-textarea{
+        text-align: center;
+        margin: 0 5em 5em 5em;
+        padding: 0 5rem 5rem 5rem;
+    }
+    .aboutus-area h1{
+        padding:  60px 20px 0 30px;
+        font-size: 3.4em;
+    }
+    .aboutus-area h2{
+        font-size: 2rem;
+    }
+    .aboutus-textarea img{
+        width: 80%;
+    }
+    .worker img{
+        width: 10em;
+        height: 10em;
+    }
+    /* ------------ABOUT US ENDS HERE----------- */
+
+    /* -----------FRESH PAGE STARTS HERE---------- */
+   
+    .fruit-section, #fruit-output{
+        padding: 30px;
+        border: 1px solid var(--accent1-color);
+        border-radius: 20px;
+    }
+    .fruit-section h1{
+        font-size: 3rem;
+    }
+    .fruit-section p{
+        text-align: left;
+        font-size: 20px;
+        padding: 0 0 30px 10px;
+    }
+    #fruit-output h2{
+        font-size: 2.5rem;
+    }
+    #fruit-output p{
+        font-size: 20px;
+    }
+    .client-info{
+        flex-wrap: nowrap;
+    }
+    #fruitMixForm  .btn{
+        width: auto;
+        margin-bottom: 10px;
+    }
+    #required{
+        font-size: 25px;
+    }
+
+}

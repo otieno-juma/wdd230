@@ -29,6 +29,9 @@ footer {
 header {
     box-shadow: 0 0 15px 5px #0067b9;
 }
+.navigation ul,li{
+    color:#0df174;
+}
 
 footer {
     box-shadow: 0 0 15px 5px #0067b9;

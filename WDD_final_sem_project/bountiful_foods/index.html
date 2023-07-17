@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="Author" content="Paul Juma Otieno" >
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="favicon_io/site.webmanifest">
+
+    <meta name="description"
+    content="Bountiful Foods Home Page WDD230: Web Frontend Development at Brigham Young University - Idaho" >
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" >
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/medium.css">
+    <link rel="stylesheet" href="styles/large.css">
+    <script src="https://kit.fontawesome.com/ebcf57f900.js" crossorigin="anonymous"></script>
+    <title>Bountiful Food | Home</title>
+</head> 
+<body> 
+    <header>
+        <nav class="navbar">
+            <button id="hamburgerBtn"><span>&#9776;</span></button>
+            <!-- <input type="checkbox" id="check">
+            <label for="check" class=" checkBtn"><i class="fas fa-bars"></i></label> -->
+            <label class="logo"><a href="index.html">BountifulFoods</a></label>
+            <ul class="toggle">
+                <li><a class="active" href="index.html">Home</a></li>
+                <li><a class="fresh" href="fresh.html">Fresh</a></li>
+                <li><a href="aboutus.html">About Us</a></li>
+                <li><a href="../bountifulfoods_siteplan/index.html">Site Plan</a></li>
+            </ul>
+        </nav>
+    </header>
+        <div class="hero-area">
+            <div class="hero-text">
+                <h1>Feel the natural blend and taste<br> pure organic, 100% legit granteed!</h1>
+                <p>Live Healthy and strong. Love nature and drink fruity. <br>Sourced from locally from the farms</p>
+                <p></p>
+                <div class="heroBtn">
+                    <a href="fresh.html">Blend your fresh fruit mix</a>
+                </div>
+            </div>
+        </div>
+    <main class="home-main">
+        <section class="about" id="about">
+            <h2 class="heading"> <span>La Jolla,</span> San Diego</h2>
+            <div class="row">
+                <div class="image">
+                    <picture><img src="images/placeholder.png" data-src="images\La Jolla cove.jpg" alt="image of La_Jolla ocean front"></picture>
+                </div>
+                <div class="content">
+                    <h3>About La Jolla, San Diego</h3>
+                    <p>La Jolla's impeccable coastline boasts the famous La Jolla Cove, said to be one of the most photographed spots in the area. 
+                       Though it won't be your routine swimming spot due to restrictions protecting the local wildlife, it can easily serve as a daily retreat
+                    </p>
+                    <p>But don't panic, there are plenty of unparalleled beaches for your swimming needs found all over La Jolla's coast. 
+                        From Windansea Beach to Torrey Pines State Beach, every sandy offering has a unique slice of ocean and beach to enjoy.
+                    </p>
+                    <a href="https://en.wikipedia.org/wiki/La_Jolla" target="_blank" class="btn">learn more...</a>
+                </div>
+            </div>
+        </section>
+        <section class="menu" id="menu">
+            <h2 class="heading">order for your<span> fresh fruit </span>mix</h2>
+            <div class="box-container">
+                <div class="box">
+                    <picture><img src="images/placeholder.png" data-src="images/fresh_fruit1.jpeg" alt="strawberies"></picture>
+                    <h3>Make your fresh fruit mix</h3>
+                     <a href="fresh.html" class="btn">Get started!</a>
+                </div>
+                <div class="box">
+                    <picture><img src="images/placeholder.png" data-src="images/fresh_fruit2.jpeg" alt="mixed fruits"></picture>
+                    <h3>Make your fresh fruit mix</h3>
+                     <a href="fresh.html" class="btn">Get started!</a>
+                </div>
+                <div class="box">
+                    <picture><img src="images/placeholder.png" data-src="images/fresh_fruit3.jpg" alt="fruits"></picture>
+                    <h3>Make your fresh fruit mix</h3>
+                     <a href="fresh.html" class="btn">Get started!</a>
+                </div>
+                <div class="box">
+                    <picture><img src="images/placeholder.png" data-src="images/fresh_fruit4.jpeg" alt="mixed fruits"></picture>
+                    <h3>Make your fresh fruit mix</h3>
+                     <a href="fresh.html" class="btn">Get started!</a>
+                </div>
+                <div class="box">
+                    <picture><img src="images/placeholder.png" data-src="images/fresh_fruit5.jpeg" alt="mixed fruits"></picture>
+                    <h3>Make your fresh fruit mix</h3>
+                     <a href="fresh.html" class="btn">Get started!</a>
+                </div>
+                <div class="box">
+                    <picture><img src="images/placeholder.png" data-src="images/fresh_fruit6.jpeg" alt="mixed fruits"></picture>
+                    <h3>Make your fresh fruit mix</h3>
+                     <a href="fresh.html" class="btn">Get started!</a>
+                </div>
+            </div>
+        </section>
+        <section>
+            <div class="weathertotal-container">
+                <div class="weather">
+                    <h2>Weather</h2>
+                    <img class="weatherIcon" src="images/cloudy.png" alt="Weather Icon">
+                    <br>
+                    <p class="temperature"><strong><span id="temperature"></span></strong></p>
+                    <p class="humidity"><strong><span id="humidity"></span></strong></p>
+                    <p class="sky-condition"><strong><span class="skyCondition"></span></strong></p>
+                
+                    <br>
+                    <hr>
+                    <!--WEATHER FORECAST STARTS HERE -->
+                    <h2 class="wh2">Weather Forecast</h2>
+                    <div class="w-forcast">   
+                        <div id="day1" class="forecast">
+                            <p class="day1"></p>
+                            <p id="temp1"></p>
+                        </div>
+                        <div id="day2" class="forecast">
+                            <p class="day2"></p>
+                            <p id="temp2"></p>
+                        </div>
+                        <div id="day3" class="forecast">
+                            <p class="day3"></p>
+                            <p id="temp3"></p>
+                        </div>
+                    </div>
+                    <!--WEATHER FORECAST ENDS HERE -->
+
+                </div>
+            </div>  
+
+             <div class="freshtotal"><p><span id="totalDrinks"></span></p></div>
+            
+        </section>
+    </main>
+    <footer>
+        <section class="footer">
+            <div class="share">
+                <a href="https://facebook.com" target="_blank" aria-label="facebook link icon" title="facebook"><i class="fa fa-facebook"></i></a>
+                <a href="https://twitter.com" target="_blank" aria-label="twitter link icon" title="twitter"><i class="fa fa-twitter"></i></a>
+                <a href="https://instagram.com" target="_blank" aria-label="instagram link icon" title="instagram"><i class="fa fa-instagram"></i></a>
+                <a href="https://pinterest.com" target="_blank" aria-label="pinterest link icon" title="pinterest"><i class="fa fa-pinterest"></i></a>
+                <a href="https://youtube.com" target="_blank" aria-label="youtube link icon" title="youtube"><i class="fa fa-youtube"></i></a>
+
+            <div class="contacts"><h2>Contact information: <br> Address: 10019 Lurdbay, Carlsbad, CA 40065 <br> Phone: 254-115-2446</h2></div>
+            <div class="credit"><h2>&copy; <span class="color" id="current_year"></span> Bountiful Foods| <span>Paul Juma Otieno</span> | 
+                Last Updated: <span class="color" id="last_update"></span></h2></div>
+                <div class="weather-source"><a href="https://openweathermap.org" target="_blank">Weather Source: OpenWeatherMap.org</a><br><a href="https://www.folkstalk.com/2022/09/open-weather-map-api-key-with-code-examples.html" target="_blank">Premium Subscription for Daily Forecast API key Source: folkstalk.com</a></div>
+                <div class="weather-source"><a href="https://unsplash.com" target="_blank">Images Source: unsplash.com</a></div>
+        </section>
+    </footer>
+  
+<script src="scripts/home.js"></script>
+<script src="scripts/totalDrinks.js"></script>
+</body>
+</html>

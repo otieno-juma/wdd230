@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="Author" content="Paul Jma Otieno" >
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="favicon_io/site.webmanifest">
+
+    <meta name="description"
+    content="Bountiful Foods Home Page WDD230: Web Frontend Development at Brigham Young University - Idaho" >
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" >
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/medium.css">
+    <link rel="stylesheet" href="styles/large.css">
+    <script src="https://kit.fontawesome.com/ebcf57f900.js" crossorigin="anonymous"></script>
+    <title>Bountiful Food | Fresh</title>
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <button id="hamburgerBtn"><span>&#9776;</span></button>
+            <label class="logo"><a href="index.html">BountifulFoods</a></label>
+            <ul class="toggle">
+                <li><a href="index.html">Home</a></li>
+                <li><a class="fresh active" href="fresh.html">Fresh</a></li>
+                <li><a href="aboutus.html">About Us</a></li>
+                <li><a href="../bountifulfoods_siteplan/index.html">Site Plan</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main class="fresh-main">
+        <section class="fruit-section">
+            <h1 id="form-head">Make a Fresh Fruit Drink!</h1>
+            <p>* required fields</p>
+            <form id="fruitMixForm">
+                <label hidden>Date:<input type="date" name="date" hidden id="date"></label>
+                <div class="client-info">
+                    <label for="fname"><b>First Name*</b><input type="text" name="fname" aria-label="First Name" class="input" id='fname' required></label>                                            
+                    <label><b>Email*</b><input name="email" type="email" id="email" class="input" required></label>
+                    <label><b>Phone Number*</b><input name="phone" type="tel" id="phone" class="input" required></label>
+                </div>
+                <div id="fruit-selector" class="selector">
+                    <p><b>Please Select up to 3 fruits:</b></p>
+                </div>
+                <label class="textarea"><b>Add special requests:</b><textarea name="specialInstruc" cols="110" rows="5" id="specialInstruc" class="input"></textarea></label>   
+                <input type="button" value="Make Your Drink!" class="btn" id="Btn">
+            </form>
+            <p id="required">Please fill the required fields!</p>
+        </section>
+        <section id="fruit-output">
+            <h2>Fruit Mix Output:</h2>
+            <div id="output">
+                <p>Create a fruit drink mix to see it's nutrients.</p>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <section class="footer">
+            <div class="share">
+                <a href="https://facebook.com" target="_blank" aria-label="facebook link icon" title="facebook"><i class="fa fa-facebook"></i></a>
+                <a href="https://twitter.com" target="_blank" aria-label="twitter link icon" title="twitter"><i class="fa fa-twitter"></i></a>
+                <a href="https://instagram.com" target="_blank" aria-label="instagram link icon" title="instagram"><i class="fa fa-instagram"></i></a>
+                <a href="https://pinterest.com" target="_blank" aria-label="pinterest link icon" title="pinterest"><i class="fa fa-pinterest"></i></a>
+                <a href="https://youtube.com" target="_blank" aria-label="youtube link icon" title="youtube"><i class="fa fa-youtube"></i></a>
+           
+                <div class="contacts"><h2>Contact information: <br> Address: 10019 Lurdbay, Carlsbad, CA 40065 <br> Phone: 254-115-2446</h2></div>
+            <div class="credit"><h2>&copy; <span class="color" id="current_year"></span> Bountiful Foods| <span>Paul juma Otieno</span> | 
+                Last Updated: <span class="color" id="last_update"></span></h2></div>
+                <div class="weather-source"><a href="https://openweathermap.org" target="_blank">Weather Source: OpenWeatherMap.org</a><br><a href="https://www.folkstalk.com/2022/09/open-weather-map-api-key-with-code-examples.html" target="_blank">Premium Subscription for Daily Forecast API key Source: folkstalk.com</a></div>
+                <div class="weather-source"><a href="https://unsplash.com" target="_blank">Images Source: unsplash.com</a></div>
+        </section>
+    </footer>
+  
+<script src="scripts/home.js"></script>
+<script src="scripts/fresh.js"></script>
+</body>
+</html>
