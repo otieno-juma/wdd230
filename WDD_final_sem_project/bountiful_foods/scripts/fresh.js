@@ -106,7 +106,6 @@ function displayOutput(list = fruits){
             sugar += fruit.nutritions.sugar;
         }
         else{
-            // console.log("AH! whats's wrong? - 😂 ask Brother Blazzard he might have distorted the JSON file");
             console.log('')
         }
     });
