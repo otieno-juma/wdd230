@@ -1,5 +1,5 @@
 // Total numbers of drinks ordered
-const drinksTotal = document.getElementById('drinkTotal');
+const totalDrinks = document.getElementById('totalDricks');
 
 let totalOrder = Number(window.localStorage.getItem("totalOrder"));
 
